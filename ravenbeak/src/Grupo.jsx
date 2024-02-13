@@ -28,84 +28,77 @@ function Grupo(props){
     const [atrAgilidade, setAtrAgilidade] = useState();
     const [atrSaber, setAtrSaber] = useState();
 
-    const atualizarPer = () => {
-        setImgP (imagemPersonagem(props.imgPer));
-        setNome (props.nome);
-        setRaca (props.raca);
-        setClasse (props.classe);
-        setOrigem (origemPersonagem(props.origem));
-        setNivelPer (nivelPersonagem(props.nivel));
-        setVidaPer (props.vida);
-        setDefesaPer (props.def);
-        setManaPer (props.mana);
-        setHistoriaPer (props.historia);
-        setAtrConst (props.c);
-        setAtrForca (props.f);
-        setAtrAgilidade (props.a);
-        setAtrSaber (props.s);
-    }
+    useEffect(() => {
+            imagemPersonagem(props.imgPer);
+            setNome (props.nome);
+            setRaca (props.raca);
+            setClasse (props.classe);
+            origemPersonagem(props.origem);
+            nivelPersonagem(props.nivel);
+            setVidaPer (props.vida);
+            setDefesaPer (props.def);
+            setManaPer (props.mana);
+            setHistoriaPer (props.historia);
+            setAtrConst (props.c);
+            setAtrForca (props.f);
+            setAtrAgilidade (props.a);
+            setAtrSaber (props.s);
+        }
+    )
 
     function imagemPersonagem(i) {
-
-        let imgp;
 
         switch(i){
 
             case 1:
-                imgp = Guerreiro;
+                setImgP (Guerreiro);
             break;
 
             case 2:
-                imgp = Mago;
+                setImgP (Mago);
             break;
 
             case 3:
-                imgp = Paladino;
+                setImgP (Paladino);
             break;
 
             case 4:
-                imgp = Arqueiro;
+                setImgP (Arqueiro);
 
             default:
-                imgp = Arqueiro;
+                setImgP (Arqueiro);
             break;
         }
-
-        return imgp;
     }
 
     function origemPersonagem(i) {
 
-        let orgp;
-
         switch(i){
 
             case 1:
-                orgp = Grunda;
+                setOrigem(Grunda);
             break;
 
             case 2:
-                orgp = Lavari;
+                setOrigem(Lavari);
             break;
 
             case 3:
-                orgp = Termina;
+                setOrigem(Termina);
             break;
 
             case 4:
-                orgp = Viento;
+                setOrigem(Viento);
             break;
 
             case 5:
-                orgp = Volttan;
+                setOrigem(Volttan);
             break;
 
             default:
-                orgp = Unknown;
+                setOrigem(Unknown);
             break;
         }
-
-        return orgp;
     }
 
     function nivelPersonagem(i){
@@ -121,10 +114,8 @@ function Grupo(props){
             i--
         }
 
-        return nivelpp
+        setNivelPer(nivelpp);
     }
-
-    const 
 
     return (
         <div id='cardPer'>
