@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
 import Grunda from './assets/brasoesOrigem/Grunda.svg'
 import Lavari from './assets/brasoesOrigem/Lavari.svg'
 import Termina from './assets/brasoesOrigem/Termina.svg'
@@ -124,7 +125,7 @@ function Grupo(props){
                 <div className='infosPerNome'>
                     <span>
                         <p>NOME:</p>
-                        <h1 id='nomePer'>{nome}</h1>
+                        <h2 id='nomePer'>{nome}</h2>
                     </span>
                     <span>
                         <p>RAÇA:</p>
@@ -157,6 +158,41 @@ function Grupo(props){
             </div>
         </div>
     )
+
+}
+
+Grupo.propTypes = {
+    imgPer: PropTypes.number,
+    nome: PropTypes.string,
+    raca: PropTypes.string,
+    classe: PropTypes.string,
+    origem: PropTypes.number,
+    nivel: PropTypes.number,
+    vida: PropTypes.number,
+    def: PropTypes.number,
+    mana: PropTypes.number,
+    historia: PropTypes.string,
+    c: PropTypes.number,
+    f: PropTypes.number,
+    a: PropTypes.number,
+    s: PropTypes.number,
+}
+
+Grupo.defaultProps = {
+    imgPer: 4,
+    nome: "Desconhecido",
+    raca: "Desconhecida",
+    classe: "Desconhecida",
+    origem: 0,
+    nivel: 1,
+    vida: 1,
+    def: 0,
+    mana: 0,
+    historia: "Desconhecida",
+    c: 0,
+    f: 0,
+    a: 0,
+    s: 0,
 
 }
 

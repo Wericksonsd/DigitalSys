@@ -11,6 +11,7 @@ function App() {
         <Grupo imgPer={2} nome="Nosk" raca="Humano" classe="Guerreiro" origem={5} nivel={1} vida={23} def={12} mana={21} />
         <Grupo imgPer={3} nome="Nosk" raca="Humano" classe="Guerreiro" origem={3} nivel={3} vida={23} def={12} mana={21} />        
         <Grupo imgPer={4} nome="Nosk" raca="Humano" classe="Guerreiro" origem={3} nivel={3} vida={23} def={12} mana={21} />
+        <Grupo/>
       </main>
     </>
   );
