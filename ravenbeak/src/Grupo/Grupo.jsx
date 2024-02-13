@@ -1,15 +1,18 @@
 import React, { useState, useEffect } from 'react';
+
+import styles from './Grupo.module.css';
 import PropTypes from 'prop-types';
-import Grunda from './assets/brasoesOrigem/Grunda.svg'
-import Lavari from './assets/brasoesOrigem/Lavari.svg'
-import Termina from './assets/brasoesOrigem/Termina.svg'
-import Viento from './assets/brasoesOrigem/Vientto.svg'
-import Volttan from './assets/brasoesOrigem/Volttan.svg'
-import Unknown from './assets/brasoesOrigem/Unknown.svg'
-import Guerreiro from './assets/Personagens/Guerreiro.svg'
-import Mago from './assets/Personagens/Mago.svg'
-import Arqueiro from './assets/Personagens/Arqueiro.svg'
-import Paladino from './assets/Personagens/Paladino.svg'
+
+import Grunda from '../assets/brasoesOrigem/Grunda.svg'
+import Lavari from '../assets/brasoesOrigem/Lavari.svg'
+import Termina from '../assets/brasoesOrigem/Termina.svg'
+import Viento from '../assets/brasoesOrigem/Vientto.svg'
+import Volttan from '../assets/brasoesOrigem/Volttan.svg'
+import Unknown from '../assets/brasoesOrigem/Unknown.svg'
+import Guerreiro from '../assets/Personagens/Guerreiro.svg'
+import Mago from '../assets/Personagens/Mago.svg'
+import Arqueiro from '../assets/Personagens/Arqueiro.svg'
+import Paladino from '../assets/Personagens/Paladino.svg'
 
 function Grupo(props){
 
@@ -119,10 +122,10 @@ function Grupo(props){
     }
 
     return (
-        <div id='cardPer'>
-            <img id='imgPer' src={imgP} alt="personagem" />
-            <div className='infosPer'>
-                <div className='infosPerNome'>
+        <div id='cardPer' className={styles.cardPer}>
+            <img id='imgPer' className={styles.imgPer} src={imgP} alt="personagem" />
+            <div className={styles.infosPer}>
+                <div className={styles.infosPerNome}>
                     <span>
                         <p>NOME:</p>
                         <h2 id='nomePer'>{nome}</h2>
@@ -136,24 +139,24 @@ function Grupo(props){
                         <h4 id='classePer'>{classe}</h4>
                     </span>
                 </div>
-                <img id='origemPer' src={origem} alt="origem personagem"/>
+                <img id='origemPer' className={styles.origemPer} src={origem} alt="origem personagem"/>
             </div>            
-            <div className='nivelPerDiv'>
+            <div className={styles.nivelPerDiv}>
                 <p>NÍVEL:</p>
                 <h2> {nivelPer} </h2>
             </div>
-            <div className='statusPer'>
-                <div><p>VIDA</p><span id='hp'>{vidaPer}</span></div>
-                <div><p>DEFESA:</p><span id='def'>{defesaPer}</span></div>
-                <div><p>MANA:</p><span id='mana'>{manaPer}</span></div>
+            <div className={styles.statusPer}>
+                <div><p>VIDA</p><span id='hp' className={styles.hp}>{vidaPer}</span></div>
+                <div><p>DEFESA:</p><span id='def' className={styles.def}>{defesaPer}</span></div>
+                <div><p>MANA:</p><span id='mana' className={styles.mana}>{manaPer}</span></div>
             </div>
-            <div className='adicionalPer'>
-                <p id='historiaPer'><b>HISTÓRIA</b><br/>{historiaPers}</p>
-                <div className='atributosPer'>
-                    <span id='con'><p>CONST.</p>{atrConst}</span>
-                    <span id='for'><p>FORÇA</p>{atrForca}</span>
-                    <span id='agi'><p>AGIL.</p>{atrAgilidade}</span>
-                    <span id='sab'><p>SABER</p>{atrSaber}</span>
+            <div className={styles.adicionalPer}>
+                <p id='historiaPer' className={styles.historiaPer}><b>HISTÓRIA</b><br/>{historiaPers}</p>
+                <div className={styles.atributosPer}>
+                    <span id='con' className={styles.con}><p>CONST.</p>{atrConst}</span>
+                    <span id='for' className={styles.for}><p>FORÇA</p>{atrForca}</span>
+                    <span id='agi' className={styles.agi}><p>AGIL.</p>{atrAgilidade}</span>
+                    <span id='sab' className={styles.sab}><p>SABER</p>{atrSaber}</span>
                 </div>
             </div>
         </div>

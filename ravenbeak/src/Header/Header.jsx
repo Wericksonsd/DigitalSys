@@ -1,15 +1,16 @@
+import styles from "./Header.module.css";
+
 function Header() {
 
     return (
         <>
-            <header className="headerr">
-                <div className="brasao">
+            <header className={styles.headerr}>
+                <div className={styles.brasao}>
                 </div>
-                <div className="itens">
+                <div className={styles.itens}>
                     <img src="" alt="" />
-                    <ul className="itensMenu">
+                    <ul className={styles.itensMenu}>
                         <li id="grupoMenu">GRUPO</li>
-                        <li id="personagemMenu">PERSONAGENS</li>
                         <li id="missoesMenu">MISSÕES</li>
                     </ul>
                 </div>
