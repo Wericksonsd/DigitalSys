@@ -17,6 +17,11 @@
     transition-duration: 0.5s;
 }
 
+.missoesContainer:hover, .missoesContainerAberto:hover{
+    cursor: pointer;
+    transform: scale(105%);
+}
+
 .nivelGeral{       
     transition-delay: 0.15s;
     height: 30px;
@@ -93,7 +98,7 @@
     color: black;  
     padding: 0 50px;  
     font-family: "Protest Revolution", sans-serif;
-    font-size: 1.2em;
+    font-size: 1.1em;
     text-align: center;
     flex: 1;
 }
@@ -106,4 +111,18 @@
     color: black;     
     font-family: "MedievalSharp", cursive;
     text-align: right;
+}
+
+@media only screen and (min-width: 900px){
+    
+    .descrA{       
+        transition-delay: 0.3s;
+        color: black;  
+        padding: 0 50px;  
+        font-family: "Protest Revolution", sans-serif;
+        font-size: 1.2em;
+        text-align: center;
+        flex: 1;
+    }
+    
 }
