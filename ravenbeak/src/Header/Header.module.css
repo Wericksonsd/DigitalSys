@@ -14,7 +14,7 @@
     list-style: none;
 }
 
-h3{
+.itensMenu h3{
     color: aliceblue;
     font-family: "Josefin Sans", sans-serif;
     font-weight: 900;
@@ -22,7 +22,7 @@ h3{
     text-decoration: none;
 }
 
-h3:hover{
+.itensMenu h3:hover{
     cursor: pointer;
     color: rgb(215, 216, 216);
 }

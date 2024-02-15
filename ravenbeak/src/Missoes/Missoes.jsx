@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
-import styles from "./Missoes.module.css";
+import styles2 from "./Missoes.module.css";
+import styles from "./a.module.css";
 import { IoSkull }  from "react-icons/io5";
 import { GiCrownedSkull } from "react-icons/gi";
 
@@ -44,13 +45,16 @@ function Missoes(props){
     }
 
     return(
-        <div>
+        <div className={styles.missoesContainer}>
             <div className={styles.nivelGeral}>
                 <div id='nivelM1' className={styles.nivelM1}> <IoSkull/> </div>
                 <div id='nivelM2' className={styles.nivelM2}> <IoSkull/><IoSkull/> </div>
                 <div id='nivelM3' className={styles.nivelM3}> <IoSkull/><IoSkull/><IoSkull/> </div>
                 <div id='nivelM4' className={styles.nivelM4}> <IoSkull/><IoSkull/><IoSkull/><GiCrownedSkull className={styles.caveiraRei}/> </div>
             </div>
+            <div className={styles.ttl}><h2>TITULO</h2></div>
+            <div className={styles.descr}><p>historia</p></div>
+            <div className={styles.gold}><h3>00000</h3></div>
         </div>
     )
 

@@ -1,0 +1,51 @@
+
+
+/*////////////////////// FECHADO /////////////////*/
+
+.missoesContainer{
+    margin: 40px;
+    height: 128px;
+    width: 360px;
+    background-image: url(../assets/fechado.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 15px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: stretch;
+    justify-content: flex-end;
+}
+
+.nivelGeral{
+    height: 30px;
+}
+
+.nivelM1, .nivelM2, .nivelM3, .nivelM4 {
+    font-size: 1.3em;
+    color: black;
+    display: none;
+    text-align: center;
+}
+
+.caveiraRei{
+    font-size: 1.2em;
+}
+
+.ttl {
+    flex: 1;
+    color: black; 
+    font-family: "MedievalSharp", cursive;
+    padding: 15px 18px;
+    font-size: 1em;
+    text-align: center;
+}
+
+.descr{
+    display: none;
+}
+
+.gold{
+    display: none;
+}
+

@@ -1,10 +1,56 @@
+
+
+/*////////////////////// ABERTO /////////////////*/
+
+.missoesContainer{
+    margin: 40px;
+    height: 520px;
+    width: 360px;
+    background-image: url(../assets/aberto.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+}
+
+.nivelGeral{
+    height: 5%;
+}
+
 .nivelM1, .nivelM2, .nivelM3, .nivelM4 {
-    font-size: 6em;
-    color: aliceblue;
+    font-size: 1.5em;
+    color: black;
     display: none;
+    text-align: center;
 }
 
 .caveiraRei{
     font-size: 1.2em;
 }
 
+.ttl {
+    color: black; 
+    font-family: "MedievalSharp", cursive;
+    padding: 15px 10px;
+    font-size: 1.4em;
+    text-align: center;
+}
+
+.descr{
+    color: black;    
+    font-family: "Protest Revolution", sans-serif;
+    text-align: center;
+    flex: 1;
+}
+
+.gold{
+    padding-bottom: 40px;
+    padding-right: 30px;
+    color: black;     
+    font-family: "MedievalSharp", cursive;
+    text-align: right;
+}
