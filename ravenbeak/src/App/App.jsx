@@ -1,15 +1,18 @@
-import {Router, Routs} from 'react-router-dom'
+import {BrowserRouter} from 'react-router-dom';
+import {HashLink as Link} from 'react-router-hash-link';
+
 import Header from '../Header/Header.jsx';
 import Grupo from '../Grupo/Grupo.jsx';
 import Introducao from '../Intro/Intro.jsx';
 import MenuTitulo from '../MenuTitulo/MenuTitulo.jsx';
+import Missoes from '../Missoes/Missoes.jsx'
 
 import styles from './App.module.css';
 
 function App() {
 
   return(
-    <>
+    <BrowserRouter>
       <Header/>
       <Introducao/>
       <MenuTitulo id="personagemAnc" titulo="PERSONAGEM"/>
@@ -20,8 +23,9 @@ function App() {
         <Grupo imgPer={4} nome="Nosk" raca="Humano" classe="Guerreiro" origem={3} nivel={3} vida={23} def={12} mana={21} />
         <Grupo/>        
       <MenuTitulo id="missoesAnc" titulo="MISSÕES"/>
+      <Missoes nivelMissao={3}/>
       </main>
-    </>
+    </BrowserRouter>
   );
 
 }

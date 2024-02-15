@@ -123,7 +123,7 @@ function Grupo(props){
 
     return (
         <div id='cardPer' className={styles.cardPer}>
-            <img id='imgPer' className={styles.imgPer} src={imgP} alt="personagem" />
+            <div className={styles.fundoPer}> <img id='imgPer' className={styles.imgPer} src={imgP} alt="personagem" /></div>
             <div className={styles.infosPer}>
                 <div className={styles.infosPerNome}>
                     <span>

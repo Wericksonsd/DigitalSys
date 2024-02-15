@@ -2,7 +2,7 @@
 .cardPer{
     width: 390px;
     height: 410px;
-    background-image: url(../assets/fundoPapiro.png);
+    background-image: url(../assets/fundoPapiroNovo.png);
     margin: 45px;
     display: grid;
     grid-template-areas:
@@ -19,13 +19,21 @@
     ;
 }
 
-.imgPer{
+.fundoPer{
+    background-image: url(../assets/fundoPer.png);
     grid-area: imgP;
-    max-height: 290px;
-    max-width: 115px;
-    margin-top: auto;
-    margin-bottom: auto;
-    padding-left: 15px;
+    min-width: 125px;
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgPer{
+    max-height: 290px;   
+    max-width: 110px;
+    padding: 0 5px;
 }
 
 .infosPer{
