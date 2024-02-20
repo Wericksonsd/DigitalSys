@@ -154,22 +154,22 @@ function App() {
       <main className={styles.mainGrupo}>
       
       {personagem.map((personagens) => (
-          <Grupo key={personagens.idPer}>            
-            imgPer ={personagens.imgPer},
-            {personagens.nome},
-            {personagens.raca},
-            {personagens.classe},
-            {personagens.origem},
-            {personagens.nivel},
-            {personagens.vida},
-            {personagens.def},
-            {personagens.mana},
-            {personagens.historia},
-            {personagens.c},
-            {personagens.f},
-            {personagens.a},
-            {personagens.s},
-          </Grupo>
+          <Grupo key={personagens.idPer}            
+          imgPer = {personagens.imgPer}
+          nome = {personagens.nome}
+          raca =  {personagens.raca}
+          classe = {personagens.classe}
+          origem = {personagens.origem}
+          nivel = {personagens.nivel}
+          vida = {personagens.vida}
+          def = {personagens.def}
+          mana = {personagens.mana}
+          historia = {personagens.historia}
+          c = {personagens.c}
+          f = {personagens.f}
+          a = {personagens.a}
+          s = {personagens.s}
+          />
       ))}
 
       <MenuTitulo id="missoesAnc" titulo="MISSÕES"/>
