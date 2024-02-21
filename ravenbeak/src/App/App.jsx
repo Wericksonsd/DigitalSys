@@ -172,7 +172,18 @@ function App() {
           />
       ))}
 
-      <MenuTitulo id="missoesAnc" titulo="MISSÕES"/>
+    <MenuTitulo id="missoesAnc" titulo="MISSÕES"/>
+
+      {
+        missoes.map((missao) => (
+          <Missoes key = {missao.idMissao}
+          nivelMissao = {missao.nivelMissao}
+          tituloMissao = {missao.tituloMissao}
+          textoMissao = {missao.textoMissao}
+          recompensaMissao = {missao.recompensaMissao}
+          />
+        ))
+        }
 
       </main>
     </BrowserRouter>
